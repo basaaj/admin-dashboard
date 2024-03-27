@@ -82,6 +82,11 @@
     width: 50px;
 }
 
+.tiny {
+    height: 25px;
+    width: 25px;
+}
+
 .projects {
     grid-row: span 2;
     display: grid;
@@ -93,6 +98,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .announcements,
@@ -104,8 +110,21 @@
 
 .announcements div,
 .trending div,
-.project-items div {
+.project {
     background-color: white;
-    margin: 5px;
     border-radius: 8px;
+}
+
+.project {
+    margin: 5px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+.project-options {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 5px;
+    align-self: end;
 }
