@@ -24,6 +24,9 @@
 .main-content {
     background-color: lightgrey;
     grid-area: main-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .search-bar {
@@ -76,5 +79,33 @@
 
 .small {
     height: 50px;
-    width: 50px
+    width: 50px;
+}
+
+.projects {
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.project-items {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    margin: 20px;
+}
+
+.announcements div,
+.trending div,
+.project-items div {
+    background-color: white;
+    margin: 5px;
+    border-radius: 8px;
 }
