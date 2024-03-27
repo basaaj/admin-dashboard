@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "sidebar header"
+                         "sidebar main-content";
+}
+
+.sidebar {
+    background-color: skyblue;
+    grid-area: sidebar;
+}
+
+.header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.main-content {
+    background-color: lightgrey;
+    grid-area: main-content;
+}
