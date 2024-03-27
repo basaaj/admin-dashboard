@@ -108,7 +108,7 @@
     margin: 20px;
 }
 
-.announcements div,
+.announcements>div,
 .trending div,
 .project {
     background-color: white;
@@ -127,4 +127,10 @@
     justify-content: end;
     gap: 5px;
     align-self: end;
+}
+
+.announcement-item:nth-child(2) {
+    border: 2px solid grey;
+    border-right-style: none;
+    border-left-style: none;
 }
