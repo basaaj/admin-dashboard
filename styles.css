@@ -15,9 +15,66 @@
 .header {
     background-color: aqua;
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
 
 .main-content {
     background-color: lightgrey;
     grid-area: main-content;
+}
+
+.search-bar {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 15px;
+}
+
+.bar {
+    background-color: lightgray;
+    height: 25px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.user-info {
+    grid-column: 2;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;  
+    gap: 10px;  
+}
+
+.user-msg {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.user-msg .dummy-img {
+    grid-row: span 2;
+}
+
+.user-msg p {
+    grid-row: span 1;
+}
+
+.buttons {
+    grid-column: 2;
+    justify-self: end;  
+}
+
+.dummy-img {
+    background-color: pink;
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+}
+
+.small {
+    height: 50px;
+    width: 50px
 }
