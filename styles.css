@@ -140,3 +140,29 @@
     grid-template-columns: 1fr 3fr;
     margin: 15px;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin: 5px;
+    align-items: center;
+}
+
+ul .dummy-img {
+    justify-self: end;
+}
+
+.logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    align-items: center;
+}
