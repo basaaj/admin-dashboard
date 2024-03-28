@@ -109,7 +109,7 @@
 }
 
 .announcements>div,
-.trending div,
+.trending>div,
 .project {
     background-color: white;
     border-radius: 8px;
@@ -133,4 +133,10 @@
     border: 2px solid grey;
     border-right-style: none;
     border-left-style: none;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 15px;
 }
