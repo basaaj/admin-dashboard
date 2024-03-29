@@ -57,7 +57,7 @@
     grid-template-columns: 1fr 9fr;
 }
 
-.user-msg .dummy-img {
+.user-msg .icon {
     grid-row: span 2;
 }
 
@@ -70,16 +70,16 @@
     justify-self: end;  
 }
 
-.dummy-img {
-    background-color: pink;
+.icon {
     height: 75px;
     width: 75px;
-    border-radius: 50px;
+    
 }
 
-.small {
+.user {
     height: 50px;
     width: 50px;
+    border-radius: 50px;
 }
 
 .tiny {
@@ -155,7 +155,7 @@ ul li {
     align-items: center;
 }
 
-ul .dummy-img {
+ul .icon {
     justify-self: end;
 }
 
