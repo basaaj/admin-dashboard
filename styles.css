@@ -1,3 +1,8 @@
+:root {
+    --main-color: #ec9d68;
+    --accent-color: #1e1e1e;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -8,13 +13,14 @@
 }
 
 .sidebar {
-    background-color: skyblue;
+    background-color: var(--accent-color);
     grid-area: sidebar;
     padding: 10px 10px;
+    color: white;
 }
 
 .header {
-    background-color: aqua;
+    background-color: white;
     grid-area: header;
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -24,7 +30,7 @@
 }
 
 .main-content {
-    background-color: lightgrey;
+    background-color: var(--main-color);
     grid-area: main-content;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -39,7 +45,7 @@
 }
 
 .bar {
-    background-color: lightgray;
+    background-color: var(--main-color);
     height: 25px;
     align-self: center;
     border-radius: 20px;
@@ -166,4 +172,13 @@ ul li {
 
 .menu:last-of-type {
     align-self: end;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.sidebar .icon {
+    filter: invert(54%) sepia(56%) saturate(596%) hue-rotate(335deg) brightness(90%) contrast(84%);
 }
