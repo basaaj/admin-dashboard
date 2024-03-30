@@ -1,6 +1,8 @@
 :root {
     --main-color: #ec9d68;
     --accent-color: #1e1e1e;
+    --faded-black: #2f2f2f;
+    --bold: 700;
 }
 
 * {
@@ -8,6 +10,7 @@
 }
 
 .container {
+    font-family: "Roboto", serif;
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 4fr;
@@ -32,6 +35,7 @@
     align-items: center;
     padding: 10px 60px;
     gap: 10px;
+    font-weight: var(--bold);
 }
 
 .main-content {
@@ -63,6 +67,7 @@
     grid-template-columns: 1fr 1fr 2fr;  
     gap: 10px;
     align-items: center;
+    font-size: large;
 }
 
 .user-msg {
@@ -71,9 +76,13 @@
     gap: 10px;
 }
 
+.user-msg span {
+    font-size: x-large;
+}
+
 .buttons {
     grid-column: 2;
-    justify-self: end;  
+    justify-self: end;
 }
 
 .icon {
@@ -97,6 +106,7 @@
     grid-row: span 2;
     display: grid;
     grid-template-rows: 1fr 9fr;
+    margin: 20px;
 }
 
 .project-items {
@@ -105,6 +115,7 @@
     grid-template-columns: repeat(2, minmax(400px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    margin-top: -25px;
 }
 
 .announcements,
@@ -150,12 +161,23 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin: 15px 0;
+    font-weight: var(--bold);
+}
+
+.text span {
+    font-weight: 400;
+    color: var(--faded-black);
+}
+
+h3, h4 {
+    margin-bottom: 5px;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: x-large;
 }
 
 ul li {
@@ -173,6 +195,8 @@ ul li {
     gap: 5px;
     align-items: center;
     justify-content: start;
+    font-size: xx-large;
+    font-weight: var(--bold);
 }
 
 .menu:last-of-type {
@@ -182,6 +206,8 @@ ul li {
 button {
     background-color: var(--accent-color);
     color: white;
+    font-family: "Roboto", serif;
+    font-weight: var(--bold);
 }
 
 .sidebar .icon {
