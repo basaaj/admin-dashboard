@@ -13,7 +13,7 @@
     font-family: "Roboto", serif;
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) 4fr;
+    grid-template-columns: minmax(275px, 1fr) 4fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: "sidebar header"
                          "sidebar main-content";
@@ -22,8 +22,11 @@
 .sidebar {
     background-color: var(--accent-color);
     grid-area: sidebar;
-    padding: 10px 10px;
+    padding: 10px;
     color: white;
+    display: grid;
+    grid-template-rows: 100px 200px 200px;
+    align-items: start;
 }
 
 .header {
@@ -184,10 +187,12 @@ ul {
 ul li {
     display: grid;
     grid-auto-flow: column;
-    margin: 5px;
-    gap: 10px;
+    margin: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: start;
+    margin-left: 10px;
+    font-size: 1.3rem;
 }
 
 .logo {
@@ -198,6 +203,7 @@ ul li {
     justify-content: start;
     font-size: xx-large;
     font-weight: var(--bold);
+    margin-top: 10px;
 }
 
 .menu:last-of-type {
