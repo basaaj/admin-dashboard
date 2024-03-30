@@ -137,13 +137,14 @@
     margin: 5px;
     display: grid;
     grid-template-rows: 4fr 1fr;
+    border-left: 10px solid var(--faded-black);
 }
 
 .project-options {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
-    gap: 5px;
+    gap: 10px;
     align-self: end;
 }
 
@@ -208,6 +209,7 @@ button {
     color: white;
     font-family: "Roboto", serif;
     font-weight: var(--bold);
+    margin-left: 10px;
 }
 
 .sidebar .icon {
@@ -220,6 +222,17 @@ button {
     border-radius: 50px;
     font-size: medium;
 }
+
+.logo:hover,
+li:hover,
+.user-info:hover,
+button:hover,
+.project:hover,
+.announcement-item:hover,
+.trending-item:hover {
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:756px) {
     .project-items {
